@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagination</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .pagination {
+        margin: 64px auto;
+        display: flex;
+        align-items: center;
+        gap: 19px;
+        width: 40%;
+      }
+
+      button {
+        border: none;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .icon:hover {
+        background-color: #2b8a3e;
+        stroke: #fff;
+      }
+
+      .icon {
+        stroke: #2b8a3e;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #2b8a3e;
+        border-radius: 50%;
+        padding: 6px;
+      }
+
+      a,
+      a:visited {
+        color: #212529;
+        text-decoration: none;
+        background-color: #fff;
+        display: inline-block;
+        flex: 0 0 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+      }
+
+      a:hover,
+      a:active {
+        background-color: #2b8a3e;
+        color: #fff;
+      }
+
+      .pagination * {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pagination">
+      <button class="prev">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5 8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <span>...</span>
+      <a href="#">23</a>
+
+      <button class="next">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m8.25 4.5 7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
